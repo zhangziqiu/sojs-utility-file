@@ -1,0 +1,31 @@
+{
+  "name": "sojs-utility-file",
+  "version": "0.0.1",
+  "description": "文件操作工具类",
+  "homepage": "http://www.develop.cc",
+  "license": "BSD-2-Clause",
+  "author": {
+    "name": "zhangziqiu",
+    "email": "zhangziqiu@qq.com"
+  },
+  "maintainers": [
+    {
+      "name": "zhangziqiu",
+      "email": "zhangziqiu@qq.com"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangziqiu/sojs-utility-file.git"
+  },
+  "main": "./src/module.js",
+  "dependencies": {
+    "sojs": "*"
+  },
+  "devDependencies": {
+    "sojs-test": "*"
+  }
+}
