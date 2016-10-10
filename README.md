@@ -1,26 +1,22 @@
-# sojs.utility.url
+# sojs.utility.file
 ===================================
-The fastest url parser in the world.
-
-Benchmark:
-node-url: 74,404 ops/sec ±3.07% (76 runs sampled)
-url-parse: 114,962 ops/sec ±4.59% (73 runs sampled)
-sojs-utility-url: 534,134 ops/sec ±4.31% (76 runs sampled)
+文件操作工具类
 
 ---
 
 # Install
 ```
-npm install sojs-utility-url
+npm install sojs-utility-file
 ```
 
 # Use
 ```
 require('sojs');
-require('sojs-utility-url');
+require('sojs-utility-file');
 
-var url = sojs.using('sojs.utility.url');
-url.parse('http://www.develop.cc/index.html?newbee=true');
+var file = sojs.using('sojs.utility.file');
+var filePath = sojs.getClassPath('sojs.utility.file');
+file.readFileSync(filePath);
 ```
 
 # Develop
