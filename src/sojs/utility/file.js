@@ -6,7 +6,7 @@
 sojs.define({
     deps: {
         sync: 'sojs.utility.file.sync',
-        watch: 'sojs.utility.file.watch'
+        fileWatch: 'sojs.utility.file.watch'
     },
 
     $file: function () {
@@ -18,7 +18,7 @@ sojs.define({
         }
 
         // 创建watch类的代理函数
-        var watch = this.watch;
+        var watch = this.fileWatch;
         for (var i = 0, count = this.watchClassMethods.length; i < count; i++) {
             var key = this.watchClassMethods[i];
             this[key] = watch[key].proxy(watch);
